@@ -9,20 +9,18 @@ var app = new Vue(
   {
   el: "#vue_container",
     data: {
+      newItem: "",
       listItem: [
-        "",
-        "",
-        "",
-        ""
+        "cosa da fare 1",
+        "cosa da fare 2",
+        "cosa da fare 3",
+        "cosa da fare 4"
       ]
     },
     methods: {
-      nextImage: function () {
-        this.imageIndex++;
-        if (this.imageIndex == this.images.length) {
-          this.imageIndex = 0;
-          }
-      },
+      addList: function () {
+        this.listItem.push(this.newItem);
+      }
     }
   }
 );
