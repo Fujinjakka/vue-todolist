@@ -12,7 +12,7 @@
 
       <div id="lista">
         <ol>
-          <li v-for="(item, index) in listItem">{{item}}</li>
+          <li v-for="item in listItem">{{item}}<button type="button" name="button" @click="removeItem(item)">Elimina</button></li>
         </ol>
       </div>
       <input type="text"  v-model="newItem" placeholder="Inserisci cosa da fare">

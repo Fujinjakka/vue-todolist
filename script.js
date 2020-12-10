@@ -20,6 +20,9 @@ var app = new Vue(
     methods: {
       addList: function () {
         this.listItem.push(this.newItem);
+      },
+      removeItem: function (item) {
+        this.listItem.splice(this.listItem.indexOf(item), 1);
       }
     }
   }
