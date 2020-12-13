@@ -15,10 +15,9 @@
           <li v-for="item in listItem">{{item}}<button type="button" name="button" @click="removeItem(item)">Elimina</button></li>
         </ol>
       </div>
-      <input type="text"  v-model="newItem" placeholder="Inserisci cosa da fare">
+      <input type="text"  v-model="newItem" placeholder="Inserisci cosa da fare" @keyup.enter="addList">
       <button type="button" name="button" @click="addList">Aggiungi alla lista</button>
-
-
+      
     </div>
 
     <script src="script.js" charset="utf-8"></script>
